@@ -7,23 +7,19 @@
 
 
 #include <stdio.h>
-#define doc  "shiwei-apical"
+#define doc  "apical-shiwei"
 
-#define score(n) printf(#n " very happy to meet you.\n")    /*字符串常量化运算符（#）*/
+#define score(n) printf(#n " very happy to meet you!\n")    /*字符串常量化运算符（#）*/
 #define token(n) printf("the shiwei's grade is : %d\n",grade##n)/*标记粘贴运算符（##）*/
 
 void current_version(); /*打印版本相关信息*/
 void meun();
 void lead();
 static int number;
+int grade52 = 59;
 
-void main()
+void circulation()
 {
-	int grade52 = 59;
-    meun();
-	scanf("%d",&number);
-	
-	/*循环输入*/
 	while(number!=5)
 	{
 		switch(number)
@@ -34,14 +30,23 @@ void main()
 			case(4):token(52);lead();break;
 		}
 		scanf("%d",&number);
-
 	}
+	
 	if(number==5)
 	{
-		printf("good bye\n");/*打印 “good bye”*/
-	}
+		printf("--good bye!\n");/*打印 “good bye”*/
+	}	
+}
+
+void main()
+{
 	
+    meun();
+	scanf("%d",&number);
 	
+	/*循环输入*/
+	circulation();
+
 }
 
 /*打印当前版本相关信息*/
@@ -75,3 +80,5 @@ void lead()
 	printf("what do you wang to do now ?\n");
 	meun();
 }
+
+/*循环*/
