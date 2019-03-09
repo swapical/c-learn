@@ -18,25 +18,7 @@ void lead();
 static int number;
 int grade52 = 59;
 
-void circulation()
-{
-	while(number!=5)
-	{
-		switch(number)
-		{
-			case(1):current_version();lead();break;/*打印版本相关信息*/
-			case(2):printf("The teacher is :apical-lidan\n");lead();break;/*打印主管姓名*/
-			case(3):score(shiwei);lead();break;/*通过预处理宏定义打印*/
-			case(4):token(52);lead();break;
-		}
-		scanf("%d",&number);
-	}
-	
-	if(number==5)
-	{
-		printf("--good bye!\n");/*打印 “good bye”*/
-	}	
-}
+
 
 void main()
 {
@@ -82,3 +64,22 @@ void lead()
 }
 
 /*循环*/
+void circulation()
+{
+	while(number!=5)
+	{
+		switch(number)
+		{
+			case(1):current_version();lead();break;/*打印版本相关信息*/
+			case(2):printf("The teacher is :apical-lidan\n");lead();break;/*打印主管姓名*/
+			case(3):score(shiwei);lead();break;/*通过预处理宏定义打印*/
+			case(4):token(52);lead();break;
+		}
+		scanf("%d",&number);
+	}
+	
+	if(number==5)
+	{
+		printf("--good bye!\n");/*打印 “good bye”*/
+	}	
+}
