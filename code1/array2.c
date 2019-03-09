@@ -14,7 +14,7 @@ int main ()
 	printf("平均值是：%f\r\n",avg );
 	
 	return 0;
-}
+}//
 
 /*求平均值函数*/
 double getAverage(int arr[],int size)
